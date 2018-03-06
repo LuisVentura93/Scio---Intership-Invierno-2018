@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery</title>
+
+
+  </head>
+  <body>
+
+    <h1 id="titulo">JQUERY</h1>
+
+    <input id="buscar" type="search" name="negocios" value="">
+    <button id="botonBuscar" type="button" name="button">Buscar</button>
+    <ul id="lista">
+
+    </ul>
+    <label id="carga" style="display: none">Cargando...</label>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var buscador = $("#buscar");
+      var lista = $("#lista");
+      $("#botonBuscar").click(function() {
+        var buscaValor = buscador.val();
+        if(!buscaValor) {
+          buscador.css("border-color", "red");
+          return;
+        }
+        var options = {
+          type: "GET",
+          url: "",
+          success: function(result, status) {
+            lista.empty();
+            if(status == "success") {
+              if(result.success) {
+                $("#carga").css("display", "none");
+                result.results.forEach(function(b){
+                  lista.append("<li data-id='"+ b.placeId +"'>" + b.name + "</li>");
+                  $("#lista li").click(function(){
+                    console.log("Tu seleccionaste " + $(this).text());
+                  });
+                });
+              }
+            }
+          }
+        }
+          $("#carga").css("display", "block");
+          $.ajax(options)
+
+      });
+
+
+    </script>
+  </body>
+</html>

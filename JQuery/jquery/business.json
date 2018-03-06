@@ -1,0 +1,14 @@
+"businesses": [
+  {
+    "name": "Ensaladas Jalisco",
+    "phone": "4421978463",
+    "address": "Av Madero #321 Col Centro",
+    "photo": "http://images-gmi-pmc.edge-generalmills.com/6e99b261-9284-423f-b0ab-0f9ea654d28f.jpg"
+  },
+  {
+    "name": "Pollos Asados",
+    "phone": "4498523164",
+    "address": "Av Morelos Nte # 234",
+    "photo": "http://images-gmi-pmc.edge-generalmills.com/076e233c-4cd5-474f-9891-69e1bb28dff5.jpg"
+  }
+]

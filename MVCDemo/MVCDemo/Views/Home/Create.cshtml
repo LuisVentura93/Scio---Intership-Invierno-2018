@@ -1,0 +1,26 @@
+﻿@using MVCDemo.Models
+@model Person
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm("Save", "Home", Model))
+{
+    @Html.DisplayNameFor(model => model.Id)
+    @Html.TextBoxFor(model => model.Id)
+
+    @Html.DisplayNameFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name)
+
+    @Html.DisplayNameFor(model => model.Age)
+    @Html.TextBoxFor(model => model.Age)
+
+    @Html.DisplayNameFor(model => model.Address)
+    @Html.TextBoxFor(model => model.Address)
+
+    <input type="submit" name="SaveButton" value="Save" />
+}
+

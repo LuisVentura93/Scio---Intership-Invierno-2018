@@ -1,0 +1,38 @@
+body{
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #p1,#p2{
+    text-align: center;
+  }
+
+  #p1{
+    color: blue;
+  }
+
+  #p2{
+    color: red;
+  }
+
+  .circle-button{
+    margin: 60px auto;
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    border-radius: 100%;
+    box-shadow: 0 10px 10px rgba(0,0,0,.5);
+  }
+
+  .circle-button:active{
+    background-color: darkblue;
+  }
+
+  .clicks{
+    text-align: center;
+  }
+
+  .Reloj{
+    text-align: center;
+  }

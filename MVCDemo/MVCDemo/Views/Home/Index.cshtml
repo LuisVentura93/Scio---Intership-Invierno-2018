@@ -1,0 +1,25 @@
+﻿@using MVCDemo.Models
+@model IEnumerable<Person>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    @foreach(var item in Model){
+    <tr >
+        <td style="border: 1px solid black">@item.Name</td>
+        <td style="border: 1px solid black">@item.Age</td>
+        <td style="border: 1px solid black">@item.Address</td>
+        <td style="border: 1px solid black">
+
+            @Html.ActionLink("Details", "Details", "Home", item)
+
+        </td>
+    </tr>
+    }
+</table>
+
+@Html.RouteLink("Create New", new { action = "Create" , controller = "Home"})

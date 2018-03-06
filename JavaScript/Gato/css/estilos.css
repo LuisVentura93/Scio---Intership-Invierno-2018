@@ -1,0 +1,13 @@
+body, html{
+	font-family: Helvetica, sanz-serif;
+	font-size: 16px;
+}
+
+#gato td{
+	float: left;
+	border: thin solid black;
+	font-size: 300%;
+	height: 1em;
+	padding: 1em;
+	width: 1em;
+}
