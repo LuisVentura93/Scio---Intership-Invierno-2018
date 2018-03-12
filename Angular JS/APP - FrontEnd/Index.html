@@ -3,41 +3,70 @@
 <head>
     <meta charset="utf-8">
     <title>AngularJS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="js/angular.min.js"></script>
     <script src="js/Controller1.js"></script>
+    <script src="js/module.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 </head>
-<body ng-app="MyFirstApp" ng-controller="SecondController">
+<body ng-app="MyFirstApp">
 
-        <!--<div  ng-app="MyFirstApp" ng-controller="FirstController">
-                <p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
-                <h1>Hello {{name}}</h1>
-                <form  ng-app="MyFirstApp" ng-controller="FirstController" name="myForm">
-                    <p>Comment : <input type="text" ng-model="newComment.comment" placeholder="Enter your opinion here" required></p><br>
-                    <p>First Name: <input type="text" ng-model="newComment.userfirstname" placeholder="Enter your firstname here" required></p><br>
-                    <p>Last Name: <input type="text" ng-model="newComment.userlastname" placeholder="Enter your last name here" required></p><br>
-                    <p>Email: <input type="email" ng-model="newComment.email" placeholder="Your email here...yes that includes @" required></p><br>
-                    <button ng-click="AddNewComment()">Add Comment</button>
-                    <h3>Comments Down:</h3>
-                    <ul>
-                        <li ng-repeat="comment in dailymailcommentsection">
-                            {{comment.comment}} - <strong>{{comment.userfirstname + ' ' + comment.userlastname}}</strong> - {{comment.email}}
-                        </li>
-                    </ul>
-                </form>
-                <br>
-                <p>The third result is {{points[2]}}</p>
-                <p>The third result is <span ng-bind="points[0]"></span></p>
-            </div>-->
+    <div>
+        <ul id="menu">
+            <li class="hijosmenu"><a href="#/!" class="active">Home</a></li>
+            <li class="hijosmenu"><a href="#!comments">Comment Section</a></li>
+            <li class="hijosmenu"><a href="#!register">Register</a></li>
+        </ul>
+    </div>
 
-    <input type="text" ng-model="newPost.title"><br>
-    <textarea ng-model="newPost.body"></textarea>
-    <button ng-click="addPost()">Enviar</button>
-        <ul>
-            <li ng-repeat="post in posts">
-                <h2>{{post.title}}</h2>
+    <div ng-controller="FirstController">
+        
+        <div  ng-mousemove="myFunc($event)" class="container">
+            <h1>Hola esta es mi primer Aplicación con</h1>
+            <img src="files/img/angularjs-logo.png">
+            <h3>Notice: if you move the mouse over this section it will show you the coordinates.</h3>
+        </div>
+        <span>Coordinates: {{x + ', ' + y}}</span>
+        <br><br>
+        <p>Write Anything : <input type="text" ng-model="anything"></p>
+        <h1 id="whatever">{{anything}}</h1>
+        <form  ng-app="MyFirstApp" ng-controller="FirstController" name="myForm">
+            <p>Comment : <input type="text" ng-model="newComment.comment" placeholder="Enter your opinion here" required></p><br>
+            <p>First Name: <input type="text" ng-model="newComment.userfirstname" placeholder="Enter your firstname here" required></p><br>
+            <p>Last Name: <input type="text" ng-model="newComment.userlastname" placeholder="Enter your last name here" required></p><br>
+            <p>Email: <input type="email" ng-model="newComment.email" placeholder="Your email here...yes that includes @" required></p><br>
+            <button ng-click="AddNewComment()">Add Comment</button>
+            <h3>Comments Down:</h3>
+            <ul>
+                <li ng-repeat="comment in dailymailcommentsection">
+                    {{comment.comment}} - <strong>{{comment.userfirstname + ' ' + comment.userlastname}}</strong> - {{comment.email}}
+                </li>
+            </ul>
+        </form>
+        <br>
+    </div>
+
+    <div id="simple" ng-controller="ThirdController">
+        <p>Let's try this simple notify service, injected into the controller...</p>
+        <input ng-init="message=" ng-model="message" >
+        <button ng-click="callNotify(message);">NOTIFY</button>
+        <p>(you have to click 3 times to see an alert)</p>
+    </div>
+
+    <div  ng-controller="SecondController">
+        <input type="text" ng-model="newPost.title"><br>
+        <textarea ng-model="newPost.body"></textarea><br>
+        <button ng-click="addPost()">Enviar</button>
+        <button ng-click="myFunc()">Show / Hide!</button>
+        <ul ng-show="showMe">
+            <li ng-repeat="post in posts | orderBy: 'title'">
+                <h2>{{post.id+': '+post.title | uppercase }}</h2>
                 <p>{{post.body}}</p>
             </li>
         </ul>
+    </div>
+
+    <ng-view></ng-view>
+
 </body>
 </html>

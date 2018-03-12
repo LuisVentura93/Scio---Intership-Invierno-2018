@@ -1,0 +1,38 @@
+body {
+    /*background-image: url("../assets/img/Imagesfromblog2.jpg");*/
+    background-color: #2d0e3d;
+}
+
+#cabecera{
+    background-color: #a57eba;
+    color: #e3f0f7;
+}
+
+.container{
+    color: #e3f0f7;
+    padding-bottom: 40px;
+    padding-bottom: 80px;
+}
+
+.col-sm-4{
+    padding-bottom: 30px;
+}
+
+.form-group{
+    padding: 15px;
+}
+
+.form-group label{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.checkbox{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#disc{
+    width: 80%;
+    padding-bottom: 20px;
+}

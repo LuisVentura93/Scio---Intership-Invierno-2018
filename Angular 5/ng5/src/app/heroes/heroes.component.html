@@ -1,0 +1,17 @@
+<div class="container color-dark">
+    <div class="col">
+      <p>Add a bucket list item</p>
+    </div>
+    <div class="col">
+      <p>Heroes Avaliable ({{ itemCount }})</p>
+    </div>
+  </div>
+  <div class="container color-light" [@goals]="goals.length">
+    <div>
+      <div class="col-md-10" *ngFor="let hero of heros" id="colu1">
+        <img class="imgsuperhero" src="{{ hero.image }}" alt="">
+        <p id="supername">{{ hero.name }}</p>
+        <p>{{ hero.description }}</p>
+      </div>
+    </div>
+  </div>

@@ -1,6 +1,6 @@
-var app=angular.module("MyFirstApp", [])
+var app=angular.module("MyFirstApp", ["ngRoute"])
 app.controller("FirstController", function($scope, $http){
-    $scope.name="Luis";
+    $scope.anything="";
     $scope.points = [1, 15, 19, 2, 40];
     $scope.newComment = {};
     $scope.dailymailcommentsection = [
@@ -21,12 +21,13 @@ app.controller("FirstController", function($scope, $http){
         $scope.dailymailcommentsection.push($scope.newComment);
         $scope.newComment = {};
     }
+    $scope.myFunc = function(myE) {
+        $scope.x = myE.clientX;
+        $scope.y = myE.clientY;
+    }
 });
 
-var app=angular.module("MyFirstApp", [])
 app.controller("SecondController", function($scope, $http){
-    $scope.posts=[];
-    $scope.newPosts={};
     $http.get("https://jsonplaceholder.typicode.com/posts")
         .then(function(data){
             console.log(data);
@@ -37,6 +38,7 @@ app.controller("SecondController", function($scope, $http){
         });
     $scope.addPost=function(){
         $http.post("https://jsonplaceholder.typicode.com/posts",{
+            id: $scope.newPost.id,
             title: $scope.newPost.title,
             body:  $scope.newPost.body,
             userId: 1
@@ -49,4 +51,29 @@ app.controller("SecondController", function($scope, $http){
                 console("Error");
             });
     }
+    $scope.showMe = false;
+    $scope.myFunc = function() {
+        $scope.showMe = !$scope.showMe;
+    }
 });
+
+app.controller('ThirdController', ['$scope', 'notify', function($scope, notify) {
+    $scope.callNotify = function(msg) {
+      notify(msg);
+    };
+  }]).
+ factory('notify', ['$window', function(win) {
+    var msgs = [];
+    return function(msg) {
+      msgs.push(msg);
+      if (msgs.length === 3) {
+        win.alert(msgs.join('\n'));
+        msgs = [];
+      }
+    };
+  }]);
+
+  it('should test service', function() {
+    expect(element(by.id('simple')).element(by.model('message')).getAttribute('value'))
+        .toEqual('test');
+  });
