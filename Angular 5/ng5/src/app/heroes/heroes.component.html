@@ -1,17 +1,41 @@
 <div class="container color-dark">
     <div class="col">
-      <p>Add a bucket list item</p>
-    </div>
-    <div class="col">
-      <p>Heroes Avaliable ({{ itemCount }})</p>
+      <h1>Justice League - Heroes</h1>
     </div>
   </div>
   <div class="container color-light" [@goals]="goals.length">
-    <div>
-      <div class="col-md-10" *ngFor="let hero of heros" id="colu1">
-        <img class="imgsuperhero" src="{{ hero.image }}" alt="">
-        <p id="supername">{{ hero.name }}</p>
-        <p>{{ hero.description }}</p>
+      <div class="card" style="width:400px" *ngFor="let hero of heros" id="colu1">
+        <h2 class="card-title" id="heroname"> {{ hero.name }} </h2>
+        <img class="card-img-top" src="{{ hero.image }}" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title" id="heroname"> {{ hero.realName }} </h4>
+          <p class="card-text" id="texto">{{ hero.description }}</p>
+          <button type="button" class="btn btn-info btn-lg" id="boton" data-toggle="modal" data-target="#myModal">Ver Más</button>
+            <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h2 class="modal-title">{{ hero.name }}</h2>
+            </div>
+            <div class="modal-body">
+              <img class="card-img-top" src="{{ hero.image }}" alt="Card image" style="width:100%">
+              <h4 class="modal-title"> {{ hero.realName }} </h4>
+              <p>{{ hero.description }}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        
       </div>
     </div>
+        </div>
+      </div>
+      <br>
+
+
   </div>

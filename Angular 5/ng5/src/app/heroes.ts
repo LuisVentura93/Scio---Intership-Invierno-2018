@@ -1,7 +1,7 @@
 export class Hero {id: number; name: string; realName: string; description: string; image: string;}
 
 export let heroes: Hero[] = [
-    {id: 1, name: "Supermam", realName: "Clark Kent", description: "A wealthy socialite, and the owner of Wayne Enterprises. He dedicates himself to protecting Gotham City from its criminal underworld as a highly trained, masked vigilante equipped with various tools and weapons.", image: "../../assets/img/superman.png"},
+    {id: 1, name: "Superman", realName: "Clark Kent", description: "A wealthy socialite, and the owner of Wayne Enterprises. He dedicates himself to protecting Gotham City from its criminal underworld as a highly trained, masked vigilante equipped with various tools and weapons.", image: "../../assets/img/superman.png"},
     {id: 2, name: "Batman", realName: "Bruce Wayne", description: "A member of, and inspiration for, the Justice League, a Kryptonian survivor, and a journalist for the Daily Planet based in Metropolis.", image: "../../assets/img/batman.png"},
     {id: 3, name: "Robin", realName: "Robin John Blake", description: "A young police officer whose instincts lead him to believe that there is trouble on the horizon and is promoted to detective by Gordon when the elder cop saw something of himself within the younger. lake represents the idealism that Gordon and Bruce Wayne once held, but soon lost in their battle against crime in the city.", image: "../../assets/img/robin.png" },
     {id: 4, name: "Flash", realName: "Barry Allen", description: "A Central City University student, who can move at superhuman speeds with his ability to tap into the Speed Force.", image: "../../assets/img/flash.png"},
