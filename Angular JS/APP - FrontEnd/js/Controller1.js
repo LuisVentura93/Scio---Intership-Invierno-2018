@@ -1,4 +1,4 @@
-var app=angular.module("MyFirstApp", ["ngRoute"])
+var app=angular.module("MyFirstApp", [/*"ngRoute"*/])
 app.controller("FirstController", function($scope, $http){
     $scope.anything="";
     $scope.points = [1, 15, 19, 2, 40];

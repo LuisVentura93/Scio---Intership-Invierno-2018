@@ -4,20 +4,17 @@
     <meta charset="utf-8">
     <title>AngularJS</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/angular.min.js"></script>
-    <script src="js/Controller1.js"></script>
-    <script src="js/module.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
 </head>
 <body ng-app="MyFirstApp">
 
-    <div>
+    <!--<div>
         <ul id="menu">
             <li class="hijosmenu"><a href="#/!" class="active">Home</a></li>
             <li class="hijosmenu"><a href="#!comments">Comment Section</a></li>
             <li class="hijosmenu"><a href="#!register">Register</a></li>
         </ul>
-    </div>
+    </div>-->
 
     <div ng-controller="FirstController">
         
@@ -46,7 +43,7 @@
         <br>
     </div>
 
-    <div id="simple" ng-controller="ThirdController">
+   <div id="simple" ng-controller="ThirdController">
         <p>Let's try this simple notify service, injected into the controller...</p>
         <input ng-init="message=" ng-model="message" >
         <button ng-click="callNotify(message);">NOTIFY</button>
@@ -67,6 +64,9 @@
     </div>
 
     <ng-view></ng-view>
-
+    <script src="js/angular.min.js"></script>
+    <script src="js/Controller1.js"></script>
+    <!--<script src="js/module.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\UTDemo.Test.deps.json
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\UTDemo.Test.runtimeconfig.json
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\UTDemo.Test.runtimeconfig.dev.json
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\UTDemo.Test.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\UTDemo.Test.pdb
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\obj\Debug\netcoreapp2.0\UTDemo.Test.csprojResolveAssemblyReference.cache
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\obj\Debug\netcoreapp2.0\UTDemo.Test.csproj.CoreCompileInputs.cache
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\obj\Debug\netcoreapp2.0\UTDemo.Test.AssemblyInfoInputs.cache
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\obj\Debug\netcoreapp2.0\UTDemo.Test.AssemblyInfo.cs
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\obj\Debug\netcoreapp2.0\UTDemo.Test.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\obj\Debug\netcoreapp2.0\UTDemo.Test.pdb
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\UTDemo.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo.Test\bin\Debug\netcoreapp2.0\UTDemo.pdb

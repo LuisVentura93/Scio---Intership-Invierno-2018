@@ -1,0 +1,18 @@
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\bin\Debug\netcoreapp2.0\UTDemo.deps.json
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\bin\Debug\netcoreapp2.0\UTDemo.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\bin\Debug\netcoreapp2.0\UTDemo.pdb
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.csproj.CoreCompileInputs.cache
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.AssemblyInfoInputs.cache
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.AssemblyInfo.cs
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.dll
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.pdb
+C:\Users\cestrada\Desktop\Intership\UnitTesting\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.csprojResolveAssemblyReference.cache
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\bin\Debug\netcoreapp2.0\UTDemo.deps.json
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\bin\Debug\netcoreapp2.0\UTDemo.dll
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\bin\Debug\netcoreapp2.0\UTDemo.pdb
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.csprojResolveAssemblyReference.cache
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.csproj.CoreCompileInputs.cache
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.AssemblyInfoInputs.cache
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.AssemblyInfo.cs
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.dll
+C:\Users\lfventura\Documents\Unit Testing\UTDemo\UTDemo\obj\Debug\netcoreapp2.0\UTDemo.pdb
